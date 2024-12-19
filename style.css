@@ -1,3 +1,15 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    font-family: Arial, sans-serif;
+
+}
+
 .loader{
     display: flex;
     gap: 10px;
@@ -10,5 +22,15 @@
     height: 20px;
     border-radius: 50%;
     background-color: blue;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce{
+    0%, 80%, 100%{
+        transform: scale(0);
+    }
+    40%{
+        transform: scale(1);
+    }
 }
 
